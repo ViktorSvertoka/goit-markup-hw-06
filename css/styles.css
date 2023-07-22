@@ -471,23 +471,31 @@ img {
 
 /* ------------------------------------------------------ */
 
-.works {
-  padding-bottom: 120px;
+@media screen and (max-width: 1157px) {
+  .works {
+    display: none;
+  }
 }
 
-.works__title {
-  color: var(--color-grey);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  text-transform: capitalize;
-  margin-bottom: 72px;
-}
+@media screen and (min-width: 1158px) {
+  .works {
+    padding-bottom: 120px;
+  }
 
-.works__list {
-  display: flex;
-  gap: 24px;
+  .works__title {
+    color: var(--color-grey);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+  }
+
+  .works__list {
+    display: flex;
+    gap: 24px;
+  }
 }
 
 /* ------------------------------------------------------ */
