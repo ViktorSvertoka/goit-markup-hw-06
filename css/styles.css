@@ -240,6 +240,8 @@ img {
   color: var(--color-ocean);
 }
 
+/* ------------------------------------------------------ */
+
 .hero {
   background-color: var(--color-grey);
   padding: 188px 0;
@@ -368,17 +370,51 @@ img {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
+/* ------------------------------------------------------ */
+
 .company {
   padding: 120px 0;
 }
 
-.company__list {
-  display: flex;
-  gap: 24px;
+@media screen and (max-width: 767px) {
+  .company__list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+  }
 }
 
-.company__item {
+@media screen and (min-width: 768px) {
+  .company__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .company__list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+}
+
+/* .company__item {
   width: 264px;
+} */
+
+@media screen and (min-width: 768px) {
+  .company__item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .company__item {
+    width: calc((100% - 72px) / 4);
+  }
 }
 
 .company__wrapper {
@@ -391,21 +427,49 @@ img {
   margin-bottom: 8px;
 }
 
+@media screen and (max-width: 1157px) {
+  .company__wrapper {
+    display: none;
+  }
+}
+
 .company__title {
   color: var(--color-grey);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .company__title {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .company__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
 .company__text {
   color: var(--color-slate);
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
 }
+
+@media screen and (min-width: 1158px) {
+  .company__text {
+    font-weight: 400;
+  }
+}
+
+/* ------------------------------------------------------ */
 
 .works {
   padding-bottom: 120px;
@@ -425,6 +489,8 @@ img {
   display: flex;
   gap: 24px;
 }
+
+/* ------------------------------------------------------ */
 
 .team {
   background-color: var(--color-cloud);
@@ -511,6 +577,8 @@ img {
   fill: var(--color-cloud);
 }
 
+/* ------------------------------------------------------ */
+
 .customers {
   padding: 120px 0;
 }
@@ -557,6 +625,8 @@ img {
   border-color: var(--color-ocean);
   fill: var(--color-ocean);
 }
+
+/* ------------------------------------------------------ */
 
 .footer {
   background-color: var(--color-grey);
