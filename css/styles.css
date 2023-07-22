@@ -110,7 +110,7 @@ img {
   }
 }
 
-/* Page Studio */
+/* ---------- Page Studio ---------- */
 
 .header {
   border-bottom: 1px solid var(--color-cornflower);
@@ -401,10 +401,6 @@ img {
   }
 }
 
-/* .company__item {
-  width: 264px;
-} */
-
 @media screen and (min-width: 768px) {
   .company__item {
     width: calc((100% - 24px) / 2);
@@ -619,7 +615,19 @@ img {
 /* ------------------------------------------------------ */
 
 .customers {
-  padding: 120px 0;
+  padding: 96px 0;
+}
+
+@media screen and (min-width: 1158px) {
+  .customers {
+    padding: 120px 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .customers__container {
+    width: 552px;
+  }
 }
 
 .customers__title {
@@ -634,14 +642,40 @@ img {
 
 .customers__list {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+  row-gap: 72px;
+}
+
+@media screen and (min-width: 768px) {
+  .customers__list {
+    gap: 24px;
+    row-gap: 72px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .customers__list {
+    gap: 24px;
+  }
 }
 
 .customers__item {
-  width: 168px;
+  width: calc((100% - 16px) / 2);
   height: 88px;
+}
+
+@media screen and (min-width: 768px) {
+  .customers__item {
+    width: calc((100% - 48px) / 3);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .customers__item {
+    width: calc((100% - 120px) / 6);
+  }
 }
 
 .customers__link {
@@ -680,9 +714,6 @@ img {
 
 .footer-container {
   text-align: center;
-
-  /* display: flex;
-  align-items: baseline; */
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
@@ -698,15 +729,9 @@ img {
 @media screen and (min-width: 1158px) {
   .footer-container {
     display: flex;
-    /* align-items: baseline; */
     text-align: start;
   }
 }
-
-/* .footer__logo-wrapper {
-  width: 264px;
-  margin-right: 120px;
-} */
 
 @media screen and (min-width: 1158px) {
   .footer__logo-wrapper {
@@ -896,7 +921,7 @@ img {
   margin-left: 16px;
 }
 
-/* Page Portfolio */
+/* ---------- Page Portfolio ---------- */
 
 .gallery {
   padding-top: 48px;
@@ -1071,7 +1096,7 @@ img {
   letter-spacing: 0.02em;
 }
 
-/* Modal Window */
+/* ---------- Modal Window ---------- */
 
 .backdrop {
   position: fixed;
@@ -1315,7 +1340,7 @@ img {
   background-color: var(--color-ocean);
 }
 
-/* Mobile Menu */
+/* ---------- Mobile Menu ---------- */
 
 @media screen and (min-width: 768px) {
   .mobile-menu__open {
