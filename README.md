@@ -55,8 +55,24 @@
 
 # Web Studio
 
-![Web Page](./images/screencapture1.png)
+![Web Page](./assets/screencapture1-d.png)
 
 ---
 
-![Web Page](./images/screencapture2.png)
+![Web Page](./assets/screencapture2-d.png)
+
+---
+
+![Web Page](./assets/screencapture1-t.png)
+
+---
+
+![Web Page](./assets/screencapture2-t.png)
+
+---
+
+![Web Page](./assets/screencapture1-m.png)
+
+---
+
+![Web Page](./assets/screencapture2-m.png)
