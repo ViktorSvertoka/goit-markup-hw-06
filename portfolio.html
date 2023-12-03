@@ -151,32 +151,56 @@
         <div class="container">
           <h1 class="visually-hidden">Hidden</h1>
 
-          <ul class="gallery-filter__list list">
+          <ul class="gallery-filter__list list filter-js">
             <li class="gallery-filter__item">
-              <button class="gallery-filter__button" type="button">All</button>
+              <button
+                class="gallery-filter__button is-active-js"
+                type="button"
+                data-value="all"
+              >
+                All
+              </button>
             </li>
             <li class="gallery-filter__item">
-              <button class="gallery-filter__button" type="button">
+              <button
+                class="gallery-filter__button"
+                type="button"
+                data-value="web"
+              >
                 Web Site
               </button>
             </li>
             <li class="gallery-filter__item">
-              <button class="gallery-filter__button" type="button">App</button>
+              <button
+                class="gallery-filter__button"
+                type="button"
+                data-value="applications"
+              >
+                App
+              </button>
             </li>
             <li class="gallery-filter__item">
-              <button class="gallery-filter__button" type="button">
+              <button
+                class="gallery-filter__button"
+                type="button"
+                data-value="design"
+              >
                 Design
               </button>
             </li>
             <li class="gallery-filter__item">
-              <button class="gallery-filter__button" type="button">
+              <button
+                class="gallery-filter__button"
+                type="button"
+                data-value="marketing"
+              >
                 Marketing
               </button>
             </li>
           </ul>
 
           <ul class="gallery__list list">
-            <li class="gallery__item">
+            <li class="gallery__item item-js" data-tag="applications">
               <a class="gallery__link link" tabindex="0">
                 <div class="gallery__overley-wrapper">
                   <picture>
@@ -220,7 +244,7 @@
                 </div>
               </a>
             </li>
-            <li class="gallery__item">
+            <li class="gallery__item item-js" data-tag="marketing">
               <a class="gallery__link link" tabindex="0">
                 <div class="gallery__overley-wrapper">
                   <picture>
@@ -264,7 +288,7 @@
                 </div>
               </a>
             </li>
-            <li class="gallery__item">
+            <li class="gallery__item item-js" data-tag="applications">
               <a class="gallery__link link" tabindex="0">
                 <div class="gallery__overley-wrapper">
                   <picture>
@@ -308,7 +332,7 @@
                 </div>
               </a>
             </li>
-            <li class="gallery__item">
+            <li class="gallery__item item-js" data-tag="marketing">
               <a class="gallery__link link" tabindex="0">
                 <div class="gallery__overley-wrapper">
                   <picture>
@@ -352,7 +376,7 @@
                 </div>
               </a>
             </li>
-            <li class="gallery__item">
+            <li class="gallery__item item-js" data-tag="design">
               <a class="gallery__link link" tabindex="0">
                 <div class="gallery__overley-wrapper">
                   <picture>
@@ -396,7 +420,7 @@
                 </div>
               </a>
             </li>
-            <li class="gallery__item">
+            <li class="gallery__item item-js" data-tag="marketing">
               <a class="gallery__link link" tabindex="0">
                 <div class="gallery__overley-wrapper">
                   <picture>
@@ -440,7 +464,7 @@
                 </div>
               </a>
             </li>
-            <li class="gallery__item">
+            <li class="gallery__item item-js" data-tag="design">
               <a class="gallery__link link" tabindex="0">
                 <div class="gallery__overley-wrapper">
                   <picture>
@@ -484,7 +508,7 @@
                 </div>
               </a>
             </li>
-            <li class="gallery__item">
+            <li class="gallery__item item-js data-tag="web"">
               <a class="gallery__link link" tabindex="0">
                 <div class="gallery__overley-wrapper">
                   <picture>
@@ -528,7 +552,7 @@
                 </div>
               </a>
             </li>
-            <li class="gallery__item">
+            <li class="gallery__item item-js" data-tag="web">
               <a class="gallery__link link" tabindex="0">
                 <div class="gallery__overley-wrapper">
                   <picture>
@@ -674,6 +698,7 @@
       </div>
     </footer>
 
-    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/filters.js" type="module"></script>
+    <script src="./js/mobile-menu.js" type="module"></script>
   </body>
 </html>

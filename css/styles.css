@@ -71,6 +71,20 @@ img {
   height: auto;
 }
 
+.is-hidden-js {
+  transform: scale(0.3);
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1560,4 +1574,12 @@ img {
   .mobile-menu__contacts-tel {
     font-size: 24px;
   }
+}
+
+.is-active-js {
+  color: var(--color-white);
+  background-color: var(--color-ocean);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  border: 1px solid transparent;
 }
